@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Registre incidències</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Registre d'incidències</h1>
+
+  <form action="#" method="post" enctype="multipart/form-data">
+    <label for="nom">Nom complet:</label>
+    <input type="text" id="nom" name="nom" placeholder="Joan Bayarri Subirats" required>
+
+    <label for="email">Correu electrònic:</label>
+    <input type="email" id="email" name="email" placeholder="joanbayarri@iesmontsia.org" required>
+
+    <label for="telefono">Número de teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="+34 623209395" required>
+
+    <label for="departament">Departament o àrea de treball:</label>
+    <input type="text" id="departament" name="departament" placeholder="Marketing"required>
+
+    <label for="equip_marca">Marca del equip:</label>
+    <input type="text" id="equipo_marca" name="equipo_marca" required>
+
+    <label for="equip_model">Model del equip:</label>
+    <input type="text" id="equip_model" name="equip_model" required>
+
+    <label for="equip_serial">Número de serie del equip:</label>
+    <input type="text" id="equip_serial" name="equip_serial" required>
+
+    <label for="prioridad">Prioridad de la incidència:</label>
+    <select id="prioridad" name="prioridad" required>
+      <option value="baja">Baixa</option>
+      <option value="media">Mitja</option>
+      <option value="alta">Alta</option>
+    </select>
+
+    <label for="data_inici">Data i hora d'inici de la incidència:</label>
+    <input type="datetime-local" id="data_inici" name="data_inici" required>
+
+    <label for="incidencia_equip">Descripció de la incidència:</label>
+    <textarea id="incidencia_equip" name="incidencia_equip" rows="5" required></textarea>
+
+   <label for="adjunt">Adjuntar captures de pantalla (opcional):</label>
+   <input type="file" id="adjunt" name="adjunt" multiple>
+   <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
